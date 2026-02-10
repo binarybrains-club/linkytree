@@ -8,11 +8,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  image: {
-    domains: ['s3.us-east-1.amazonaws.com', 'example.com'],
-  },
-  adapter: cloudflare(),
-  output: 'static',
   site: 'https://binarybrains-club.github.io',
   base: '/linkytree',
 });
