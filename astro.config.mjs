@@ -13,4 +13,6 @@ export default defineConfig({
   },
   adapter: cloudflare(),
   output: 'static',
+  site: 'https://binarybrains-club.github.io',
+  base: '/linkytree',
 });
