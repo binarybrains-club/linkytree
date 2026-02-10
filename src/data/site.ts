@@ -15,9 +15,9 @@ export type SiteLinkCard = {
 
 export const site = {
   seo: {
-    title: 'John Doe @johndoe',
-    ogTitle: 'John Doe',
-    twitterTitle: 'John Doe',
+    title: 'Binary Brains @binarybrains-club',
+    ogTitle: 'Binary Brains',
+    twitterTitle: 'Binary Brains',
     description:
       'Full Stack Developer, creando soluciones web desde 2015. Apasionado por React, Node.js y la tecnología open source ��',
     url: 'https://links.johndoe.dev',
@@ -29,13 +29,13 @@ export const site = {
   },
 
   featuredLink: {
-    href: 'https://johndoe.dev/consulting',
+    href: 'https://binarybrains-club.github.io/',
     title: '1:1 Consulting',
     subtitle: 'Schedule a personalized session with me',
   },
 
   profile: {
-    avatarSrc: 'https://s3.us-east-1.amazonaws.com/gndx.dev/oscar-barajas-tavares-gndx.jpg',
+    avatarSrc: 'https://avatars.githubusercontent.com/u/205365829',
     name: 'Binary Brains',
     handle: '@binarybrains-club',
     bio: 'Club de informatica',
@@ -66,27 +66,27 @@ export const site = {
 
   linkCards: [
     {
-      href: 'https://johndoe.dev/blog',
-      title: 'Blog',
+      href: 'https://www.notion.so/Binary-Brains-7ce88d6234d94f9ca1a1cd10e8ecc2eb',
+      title: 'Notion',
       subtitle: 'Articles and tutorials about web development',
-      icon: '📖',
-      trailingIcon: '📖',
+      icon: '📎',
+      trailingIcon: '📎',
       style: 'background-color: rgba(250, 204, 21, 0.125); color: rgb(250, 204, 21);',
     },
     {
-      href: 'https://johndoe.dev/podcast/',
-      title: 'Podcast',
-      subtitle: 'Conversations about technology and development',
-      icon: '🎙️',
-      trailingIcon: '🎙️',
+      href: 'https://chat.whatsapp.com/KUtzK0i3UfY25z1hWfuSFR',
+      title: 'Whatsapp',
+      subtitle: 'TODO',
+      icon: '🟢',
+      trailingIcon: '🟢',
       style: 'background-color: rgba(59, 130, 246, 0.125); color: rgb(59, 130, 246);',
     },
     {
-      href: 'https://johndoe.dev/cursos',
-      title: 'Courses',
-      subtitle: 'Learn React and Node.js step by step',
-      icon: '🎒',
-      trailingIcon: '🎒',
+      href: 'https://discord.gg/cyXd37NTbq',
+      title: 'Discord',
+      subtitle: 'TODO',
+      icon: '🔵',
+      trailingIcon: '🔵',
       style: 'background-color: rgba(132, 204, 22, 0.125); color: rgb(132, 204, 22);',
     },
     {
