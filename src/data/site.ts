@@ -35,37 +35,32 @@ export const site = {
   },
 
   profile: {
-    avatarSrc: 'https://s3.us-east-1.amazonaws.com/gndx.dev/linkytree-avatar.png',
-    name: 'John Doe',
-    handle: '@johndoe',
-    bio: 'Full Stack Developer specializing in React and Node.js. Building modern and scalable web applications since 2015 🚀',
+    avatarSrc: 'https://s3.us-east-1.amazonaws.com/gndx.dev/oscar-barajas-tavares-gndx.jpg',
+    name: 'Binary Brains',
+    handle: '@binarybrains-club',
+    bio: 'Club de informatica',
   },
 
   socialLinks: [
     {
-      href: 'https://twitter.com/johndoe',
-      ariaLabel: 'Twitter',
-      icon: 'twitter',
-    },
-    {
-      href: 'https://github.com/johndoe',
+      href: 'https://github.com/binarybrains-club',
       ariaLabel: 'GitHub',
       icon: 'github',
     },
     {
-      href: 'https://linkedin.com/in/johndoe',
-      ariaLabel: 'LinkedIn',
-      icon: 'linkedin',
-    },
-    {
-      href: 'https://instagram.com/johndoe',
+      href: 'https://www.instagram.com/binarybrainsclub/',
       ariaLabel: 'Instagram',
       icon: 'instagram',
     },
     {
-      href: 'https://youtube.com/@johndoe',
-      ariaLabel: 'YouTube',
-      icon: 'youtube',
+      href: 'https://www.linkedin.com/company/binary-brains-upiicsa/',
+      ariaLabel: 'LinkedIn',
+      icon: 'linkedin',
+    },
+    {
+      href: 'https://www.twitch.tv/binarybrains',
+      ariaLabel: 'Twitch',
+      icon: 'twitch',
     },
   ] satisfies SiteSocialLink[],
 
