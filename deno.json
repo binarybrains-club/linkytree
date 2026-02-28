@@ -5,5 +5,10 @@
     "npm:sharp@0.34.5",
     "npm:workerd@1.20251118.0"
   ],
-  "unstable": ["fmt-component"]
+  "unstable": ["fmt-component"],
+  "lint": {
+    "rules": {
+      "tags": ["recommended"]
+    }
+  }
 }
