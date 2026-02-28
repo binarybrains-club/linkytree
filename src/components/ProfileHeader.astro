@@ -25,7 +25,7 @@ const { avatarSrc, name, handle, bio } = Astro.props;
         alt={name}
         width={112}
         height={112}
-        class="w-28 h-28 rounded-full object-cover border-4 border-background"
+        class="w-28 h-28 rounded-full object-cover border-4 border-white"
         loading="eager"
         decoding="async"
       />
@@ -37,7 +37,7 @@ const { avatarSrc, name, handle, bio } = Astro.props;
   </div>
 
   <h1 class="font-display text-3xl md:text-4xl font-bold mb-1">
-    <span class="gradient-text">{name}</span>
+    <span class="text-white">{name}</span>
   </h1>
   <p class="text-muted-foreground text-lg mb-4">{handle}</p>
   <p class="text-foreground/80 max-w-md mx-auto leading-relaxed">

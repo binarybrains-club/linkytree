@@ -44,9 +44,7 @@
   .via-accent {
     --tw-gradient-to: hsl(var(--accent) / 0) var(--tw-gradient-to-position);
     --tw-gradient-stops:
-      var(--tw-gradient-from), hsl(var(--accent)) var(
-      --tw-gradient-via-position
-    ), var(--tw-gradient-to);
+      var(--tw-gradient-from), hsl(var(--accent)) var(--tw-gradient-via-position), var(--tw-gradient-to);
   }
 
   .to-secondary {
@@ -59,63 +57,6 @@
 
   .fill-secondary {
     fill: hsl(var(--secondary));
-  }
-
-  .gradient-text {
-    background: linear-gradient(
-      90deg,
-      hsl(var(--primary)),
-      hsl(var(--accent)),
-      hsl(var(--secondary))
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-
-  .bg-grid {
-    background-image:
-      linear-gradient(hsl(var(--primary)) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(var(--primary)) 1px, transparent 1px);
-    background-size: 60px 60px;
-  }
-
-  .blob {
-    position: absolute;
-    border-radius: 9999px;
-    filter: blur(120px);
-    opacity: 0.3;
-    transform: translateZ(0);
-    will-change: transform;
-  }
-
-  .blob-a {
-    width: 600px;
-    height: 600px;
-    left: -10%;
-    top: 10%;
-    background: radial-gradient(circle, rgb(26, 230, 213) 0%, transparent 70%);
-    opacity: 0.3;
-  }
-
-  .blob-b {
-    width: 500px;
-    height: 500px;
-    right: -5%;
-    top: 40%;
-    background: radial-gradient(circle, rgb(224, 82, 177) 0%, transparent 70%);
-    opacity: 0.25;
-    filter: blur(100px);
-  }
-
-  .blob-c {
-    width: 400px;
-    height: 400px;
-    left: 30%;
-    bottom: 5%;
-    background: radial-gradient(circle, rgb(177, 82, 224) 0%, transparent 70%);
-    opacity: 0.2;
-    filter: blur(80px);
   }
 
   .social-icon {
