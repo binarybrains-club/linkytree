@@ -1,11 +1,11 @@
 name: Linting & formatting
 
 on:
-  push: 
+  push:
     branches: [main]
-  pull_request: 
+  pull_request:
 
-  workflow_call: 
+  workflow_call:
 
 permissions:
   contents: write

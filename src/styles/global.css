@@ -44,7 +44,9 @@
   .via-accent {
     --tw-gradient-to: hsl(var(--accent) / 0) var(--tw-gradient-to-position);
     --tw-gradient-stops:
-      var(--tw-gradient-from), hsl(var(--accent)) var(--tw-gradient-via-position), var(--tw-gradient-to);
+      var(--tw-gradient-from), hsl(var(--accent)) var(
+      --tw-gradient-via-position
+    ), var(--tw-gradient-to);
   }
 
   .to-secondary {
