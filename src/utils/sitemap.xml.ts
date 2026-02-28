@@ -1,6 +1,6 @@
 import type { APIRoute } from "astro";
 
-import { site } from "../data/site";
+import { site } from "../data/site.ts";
 
 export const prerender = true;
 
