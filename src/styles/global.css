@@ -1,8 +1,8 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @layer base {
   :root {
-    --background: 222 47% 6%;
+    --background: 236.13, 79.49%, 7.65%;
     --foreground: 210 20% 98%;
 
     --muted-foreground: 215 20% 65%;
@@ -44,8 +44,7 @@
   .via-accent {
     --tw-gradient-to: hsl(var(--accent) / 0) var(--tw-gradient-to-position);
     --tw-gradient-stops:
-      var(--tw-gradient-from), hsl(var(--accent)) var(--tw-gradient-via-position),
-      var(--tw-gradient-to);
+      var(--tw-gradient-from), hsl(var(--accent)) var(--tw-gradient-via-position), var(--tw-gradient-to);
   }
 
   .to-secondary {
@@ -61,12 +60,10 @@
   }
 
   .gradient-text {
-    background: linear-gradient(
-      90deg,
-      hsl(var(--primary)),
-      hsl(var(--accent)),
-      hsl(var(--secondary))
-    );
+    background: linear-gradient(90deg,
+        hsl(var(--primary)),
+        hsl(var(--accent)),
+        hsl(var(--secondary)));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -164,18 +161,49 @@
   }
 }
 
+.symbol {
+  position: absolute;
+  font-weight: 300;
+  pointer-events: none;
+  user-select: none;
+
+  &.color1 {
+    color: rgba(100, 150, 255, 0.25);
+  }
+
+  &.color2 {
+    color: rgba(80, 180, 255, 0.3);
+  }
+
+  &.color3 {
+    color: rgba(120, 160, 220, 0.2);
+  }
+
+  &.color4 {
+    color: rgba(90, 140, 200, 0.35);
+  }
+
+  &.small {
+    font-size: 0.75rem;
+    opacity: 0.6;
+  }
+
+  &.medium {
+    font-size: 1rem;
+    opacity: 0.5;
+  }
+
+  &.large {
+    font-size: 1.375rem;
+    opacity: 0.4;
+  }
+}
+
 @layer utilities {
   .font-display {
     font-family:
-      ui-sans-serif,
-      system-ui,
-      -apple-system,
-      Segoe UI,
-      Roboto,
-      Helvetica,
-      Arial,
-      'Apple Color Emoji',
-      'Segoe UI Emoji';
+      ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+      Arial, "Apple Color Emoji", "Segoe UI Emoji";
     letter-spacing: -0.02em;
   }
 
@@ -188,9 +216,11 @@
   0% {
     transform: translateY(-2px);
   }
+
   50% {
     transform: translateY(2px);
   }
+
   100% {
     transform: translateY(-2px);
   }

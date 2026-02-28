@@ -1,9 +1,41 @@
-<div class='fixed inset-0 overflow-hidden pointer-events-none'>
-  <div class='absolute inset-0 bg-background'></div>
+<div class='fixed inset-0 overflow-hidden pointer-events-none' id="bg-container"></div>
 
-  <div class='blob blob-a'></div>
-  <div class='blob blob-b'></div>
-  <div class='blob blob-c'></div>
+<script>
+  const SYMBOL_COUNT = 80;
 
-  <div class='absolute inset-0 opacity-[0.02] bg-grid'></div>
-</div>
+  const container = document.getElementById("bg-container");
+
+  const symbols = [
+    '+', '-', '/', '*', '=', '!=', '==',
+    '++', '--', '+=', '-=', '*=',
+    '0', '1',
+    '{', '}', '[', ']', '(', ')', '<', '>',
+    '||', '&&', '!', '%',
+    '?', ':', ';', '//'
+  ];
+
+  const sizes = [ 'smalls', 'meidum', 'large' ];
+
+  const colors = [ 'color1', 'color2', 'color3', 'color4' ]
+
+  function createSymbol(){
+    const symbol = document.createElement("div");
+    symbol.classList.add("symbol");
+
+    symbol.textContent = symbols[Math.floor(Math.random() * symbols.length)]
+
+    symbol.classList.add(sizes[Math.floor(Math.random() * sizes.length)])
+    symbol.classList.add(colors[Math.floor(Math.random() * colors.length)])
+
+    symbol.style.left = `${Math.random() * 100}%`;
+    symbol.style.top = `${Math.random() * 100}%`;
+
+    container?.appendChild(symbol);
+  }
+
+
+  for(let i = 0; i < SYMBOL_COUNT; i++){
+    createSymbol();
+  }
+
+</script>

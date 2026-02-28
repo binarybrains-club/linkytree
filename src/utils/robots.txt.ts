@@ -1,6 +1,6 @@
-import type { APIRoute } from 'astro';
+import type { APIRoute } from "astro";
 
-import { site } from '../data/site';
+import { site } from "../data/site";
 
 export const prerender = true;
 
@@ -12,7 +12,7 @@ export const GET: APIRoute = () => {
   return new Response(body, {
     status: 200,
     headers: {
-      'Content-Type': 'text/plain; charset=utf-8',
+      "Content-Type": "text/plain; charset=utf-8",
     },
   });
 };
