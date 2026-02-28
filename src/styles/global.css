@@ -44,7 +44,9 @@
   .via-accent {
     --tw-gradient-to: hsl(var(--accent) / 0) var(--tw-gradient-to-position);
     --tw-gradient-stops:
-      var(--tw-gradient-from), hsl(var(--accent)) var(--tw-gradient-via-position), var(--tw-gradient-to);
+      var(--tw-gradient-from), hsl(var(--accent)) var(
+      --tw-gradient-via-position
+    ), var(--tw-gradient-to);
   }
 
   .to-secondary {
@@ -60,10 +62,12 @@
   }
 
   .gradient-text {
-    background: linear-gradient(90deg,
-        hsl(var(--primary)),
-        hsl(var(--accent)),
-        hsl(var(--secondary)));
+    background: linear-gradient(
+      90deg,
+      hsl(var(--primary)),
+      hsl(var(--accent)),
+      hsl(var(--secondary))
+    );
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

@@ -1,11 +1,11 @@
 ---
-import whatsapp from '../assets/whatsapp.svg?raw';
-import youtube from '../assets/youtube.svg?raw';
-import github from '../assets/github.svg?raw';
-import instagram from '../assets/instagram.svg?raw';
-import twitter from '../assets/twitter.svg?raw';
-import linkedin from '../assets/linkedin.svg?raw';
-import twitch from '../assets/twitch.svg?raw';
+import whatsapp from "../assets/whatsapp.svg?raw";
+import youtube from "../assets/youtube.svg?raw";
+import github from "../assets/github.svg?raw";
+import instagram from "../assets/instagram.svg?raw";
+import twitter from "../assets/twitter.svg?raw";
+import linkedin from "../assets/linkedin.svg?raw";
+import twitch from "../assets/twitch.svg?raw";
 
 interface SocialLink {
   href: string;
@@ -30,15 +30,15 @@ const icons: Record<string, string> = {
 };
 ---
 
-<div class='flex justify-center gap-2 flex-wrap'>
+<div class="flex justify-center gap-2 flex-wrap">
   {
     links.map((link) => (
       <a
         href={link.href}
-        target='_blank'
-        rel='noopener noreferrer'
+        target="_blank"
+        rel="noopener noreferrer"
         aria-label={link.ariaLabel}
-        class='social-icon'
+        class="social-icon"
         set:html={icons[link.icon]}
       />
     ))

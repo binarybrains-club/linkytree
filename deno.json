@@ -4,5 +4,6 @@
     "npm:sharp@0.33.5",
     "npm:sharp@0.34.5",
     "npm:workerd@1.20251118.0"
-  ]
+  ],
+  "unstable": ["fmt-component"]
 }
