@@ -1,6 +1,7 @@
 # LinkyTree
 
-A link-in-bio page built with **Astro** and **TailwindCSS**. It renders your profile, social links, and link cards from a single data file.
+A link-in-bio page built with **Astro** and **TailwindCSS**. It renders your
+profile, social links, and link cards from a single data file.
 
 ![LinkyTree Preview](https://s3.us-east-1.amazonaws.com/gndx.dev/linkyTree.png)
 
@@ -34,7 +35,8 @@ npm run build
 npm run preview
 ```
 
-- `npm run setup`: interactive CLI to fill basic `src/data/site.ts` fields (name, handle, bio, social links)
+- `npm run setup`: interactive CLI to fill basic `src/data/site.ts` fields
+  (name, handle, bio, social links)
 - `npm run dev`: starts the dev server at `http://localhost:4321`
 - `npm run build`: generates the static site in `dist/`
 - `npm run preview`: previews the production build
@@ -51,7 +53,9 @@ If you want a quick start, run:
 npm run setup
 ```
 
-The setup assistant will ask for your name, handle, bio, and then prompt for social links in a fixed order. You can press Enter to skip any social platform and it will not be written into `site.ts`.
+The setup assistant will ask for your name, handle, bio, and then prompt for
+social links in a fixed order. You can press Enter to skip any social platform
+and it will not be written into `site.ts`.
 
 Here you can edit:
 
@@ -61,7 +65,8 @@ Here you can edit:
 - `site.socialLinks`: list of social networks (with embedded `iconSvg`)
 - `site.linkCards`: main link cards (title, subtitle, emojis, and `href`)
 
-**Note:** `robots.txt`, `sitemap.xml`, and `humans.txt` use `site.seo.url` to build the `origin`. If you change the domain, update that field.
+**Note:** `robots.txt`, `sitemap.xml`, and `humans.txt` use `site.seo.url` to
+build the `origin`. If you change the domain, update that field.
 
 ## Routes
 
@@ -99,13 +104,16 @@ Global styles are located in `src/styles/global.css`:
 
 ### Cloudflare Workers
 
-This project is configured to deploy to Cloudflare Workers using the `wrangler.jsonc` file. The deployment is static, which means the site is completely generated at build time and doesn't require a runtime server.
+This project is configured to deploy to Cloudflare Workers using the
+`wrangler.jsonc` file. The deployment is static, which means the site is
+completely generated at build time and doesn't require a runtime server.
 
 #### Why is it static?
 
 - **Performance**: The site is served as static files from Cloudflare's CDN
 - **Cost**: No server or runtime costs
-- **Scalability**: The CDN automatically handles traffic without needing to scale servers
+- **Scalability**: The CDN automatically handles traffic without needing to
+  scale servers
 - **Security**: Smaller attack surface with no server-side processes
 
 #### Name Configuration
@@ -114,14 +122,15 @@ To change the deployment name, edit the `name` field in `wrangler.jsonc`:
 
 ```jsonc
 {
-  "name": "your-name-here",
+  "name": "your-name-here"
   // ... other configurations
 }
 ```
 
 #### Static Files and .assetsignore
 
-The `public/.assetsignore` file controls which files are excluded from static assets:
+The `public/.assetsignore` file controls which files are excluded from static
+assets:
 
 ```
 # dist/.assetsignore
@@ -129,7 +138,8 @@ _worker.js
 _routes.json
 ```
 
-These files are excluded because they are internal Workers configuration files that don't need to be served as static assets.
+These files are excluded because they are internal Workers configuration files
+that don't need to be served as static assets.
 
 #### Deployment Instructions
 
@@ -156,15 +166,18 @@ These files are excluded because they are internal Workers configuration files t
    wrangler deploy
    ```
 
-The site will be available at `https://your-name.workers.dev` or your custom domain if you configured one.
+The site will be available at `https://your-name.workers.dev` or your custom
+domain if you configured one.
 
 ### Other Static Providers
 
-The build output is static (`dist/` folder), so you can also deploy to any static hosting provider (Netlify, Vercel, Cloudflare Pages, GitHub Pages, etc.).
+The build output is static (`dist/` folder), so you can also deploy to any
+static hosting provider (Netlify, Vercel, Cloudflare Pages, GitHub Pages, etc.).
 
 ## 💻 Contributing
 
-Contributions to this project are welcome. If you find a bug or have a suggestion for improvement, please open an issue or submit a pull request.
+Contributions to this project are welcome. If you find a bug or have a
+suggestion for improvement, please open an issue or submit a pull request.
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -177,8 +190,11 @@ Contributions to this project are welcome. If you find a bug or have a suggestio
 
 ## 📃 License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under the MIT License. See the `LICENSE` file for
+details.
 
 ## ☕ Support
 
-If this project helped you learn something new, or if you're feeling particularly generous, you can buy me a coffee. It's greatly appreciated! 😊 [GitHub Sponsors](https://github.com/sponsors/gndx)
+If this project helped you learn something new, or if you're feeling
+particularly generous, you can buy me a coffee. It's greatly appreciated! 😊
+[GitHub Sponsors](https://github.com/sponsors/gndx)
