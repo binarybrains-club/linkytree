@@ -1,13 +1,11 @@
 # LinkyTree
 
 A link-in-bio page built with **Astro** and **TailwindCSS**. It renders your
-profile, social links, and link cards from a single data file.
+profile, social links, and link cards from a single data file. Originally created by [GNDX](https://github.com/gndx/linkytree)
 
-![LinkyTree Preview](https://s3.us-east-1.amazonaws.com/gndx.dev/linkyTree.png)
+![LinkyTree Preview](https://github.com/user-attachments/assets/44d7cab6-e580-471f-bc32-a086de21ddc1)
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/gndx/linkytree)
-
-**Live at:** [linkytree.error427.com](https://linkytree.error427.com)
+**Live at:** [binarybrains-club.github.io/linkytree/](https://binarybrains-club.github.io/linkytree/)
 
 ## Stack
 
@@ -17,29 +15,28 @@ profile, social links, and link cards from a single data file.
 
 ## Requirements
 
-- Node.js (recommended: LTS)
-- npm
+- Deno (recommended: 2.X)
 
 ## Installation
 
 ```bash
-npm install
+deno install
 ```
 
 ## Commands
 
 ```bash
-npm run setup
-npm run dev
-npm run build
-npm run preview
+deno task setup
+deno task dev
+deno task build
+deno task preview
 ```
 
-- `npm run setup`: interactive CLI to fill basic `src/data/site.ts` fields
+- `deno task setup`: interactive CLI to fill basic `src/data/site.ts` fields
   (name, handle, bio, social links)
-- `npm run dev`: starts the dev server at `http://localhost:4321`
-- `npm run build`: generates the static site in `dist/`
-- `npm run preview`: previews the production build
+- `deno task dev`: starts the dev server at `http://localhost:4321`
+- `deno task build`: generates the static site in `dist/`
+- `deno task preview`: previews the production build
 
 ## Configuration / Content
 
@@ -50,7 +47,7 @@ The single source of truth for your site content is:
 If you want a quick start, run:
 
 ```bash
-npm run setup
+deno task setup
 ```
 
 The setup assistant will ask for your name, handle, bio, and then prompt for
@@ -102,73 +99,6 @@ Global styles are located in `src/styles/global.css`:
 
 ## Deploy
 
-### Cloudflare Workers
-
-This project is configured to deploy to Cloudflare Workers using the
-`wrangler.jsonc` file. The deployment is static, which means the site is
-completely generated at build time and doesn't require a runtime server.
-
-#### Why is it static?
-
-- **Performance**: The site is served as static files from Cloudflare's CDN
-- **Cost**: No server or runtime costs
-- **Scalability**: The CDN automatically handles traffic without needing to
-  scale servers
-- **Security**: Smaller attack surface with no server-side processes
-
-#### Name Configuration
-
-To change the deployment name, edit the `name` field in `wrangler.jsonc`:
-
-```jsonc
-{
-  "name": "your-name-here"
-  // ... other configurations
-}
-```
-
-#### Static Files and .assetsignore
-
-The `public/.assetsignore` file controls which files are excluded from static
-assets:
-
-```
-# dist/.assetsignore
-_worker.js
-_routes.json
-```
-
-These files are excluded because they are internal Workers configuration files
-that don't need to be served as static assets.
-
-#### Deployment Instructions
-
-1. **Install Wrangler CLI** (if you don't have it):
-
-   ```bash
-   npm install -g wrangler
-   ```
-
-2. **Authenticate with Cloudflare**:
-
-   ```bash
-   wrangler auth login
-   ```
-
-3. **Build the project**:
-
-   ```bash
-   npm run build
-   ```
-
-4. **Deploy to Workers**:
-   ```bash
-   wrangler deploy
-   ```
-
-The site will be available at `https://your-name.workers.dev` or your custom
-domain if you configured one.
-
 ### Other Static Providers
 
 The build output is static (`dist/` folder), so you can also deploy to any
@@ -193,7 +123,7 @@ suggestion for improvement, please open an issue or submit a pull request.
 This project is licensed under the MIT License. See the `LICENSE` file for
 details.
 
-## ☕ Support
+## ☕ Support (Original Creator)
 
 If this project helped you learn something new, or if you're feeling
 particularly generous, you can buy me a coffee. It's greatly appreciated! 😊
