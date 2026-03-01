@@ -43,6 +43,7 @@ const jsonLd = {
   twitterCreator={site.seo.twitterCreator}
 >
   <script
+    is:inline
     type="application/ld+json"
     slot="head"
     set:html={JSON.stringify(jsonLd)}

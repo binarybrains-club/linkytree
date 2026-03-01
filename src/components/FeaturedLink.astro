@@ -12,8 +12,8 @@ const { href, title, subtitle } = Astro.props;
   {href}
   target="_blank"
   rel="noopener noreferrer"
-  class="link-card block text-center"
+  class="featured-link"
 >
-  <div class="font-display font-semibold text-foreground">{title}</div>
-  <div class="text-sm text-muted-foreground">{subtitle}</div>
+  <div class="font-display font-bold">{title}</div>
+  <div class="text-sm featured-link-subtitle">{subtitle}</div>
 </a>

@@ -1,3 +1,5 @@
+import BinaryLogo from "../assets/logo.png";
+
 export type SiteSocialLink = {
   href: string;
   ariaLabel: string;
@@ -29,13 +31,15 @@ export const site = {
   },
 
   featuredLink: {
-    href: "https://binarybrains-club.github.io/",
-    title: "1:1 Consulting",
-    subtitle: "Schedule a personalized session with me",
+    href:
+      "https://untalbry.notion.site/Contribuidores-47bd85709a4048f0aa4b964d820a89a1",
+    title: "¿Buscas apoyo en alguna rama de la programación?",
+    subtitle:
+      "Descubre a los colaboradores de la comunidad y sus áreas de especialidad",
   },
 
   profile: {
-    avatarSrc: "https://avatars.githubusercontent.com/u/205365829",
+    avatarSrc: BinaryLogo,
     name: "Binary Brains",
     handle: "@binarybrains-club",
     bio: "Club de informatica",
