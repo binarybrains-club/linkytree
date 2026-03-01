@@ -33,7 +33,7 @@ export const site = {
   featuredLink: {
     href:
       "https://untalbry.notion.site/Contribuidores-47bd85709a4048f0aa4b964d820a89a1",
-    title: "¿Buscas apoyo en alguna rama de la programación?",
+    title: "¿Necesitas ayuda programando?",
     subtitle:
       "Descubre a los colaboradores de la comunidad y sus áreas de especialidad",
   },
