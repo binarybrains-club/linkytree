@@ -1,11 +1,13 @@
 # LinkyTree
 
 A link-in-bio page built with **Astro** and **TailwindCSS**. It renders your
-profile, social links, and link cards from a single data file. Originally created by [GNDX](https://github.com/gndx/linkytree)
+profile, social links, and link cards from a single data file. Originally
+created by [GNDX](https://github.com/gndx/linkytree)
 
 ![LinkyTree Preview](https://github.com/user-attachments/assets/44d7cab6-e580-471f-bc32-a086de21ddc1)
 
-**Live at:** [binarybrains-club.github.io/linkytree/](https://binarybrains-club.github.io/linkytree/)
+**Live at:**
+[binarybrains-club.github.io/linkytree/](https://binarybrains-club.github.io/linkytree/)
 
 ## Stack
 
