@@ -23,7 +23,7 @@ export const site = {
     description:
       "Full Stack Developer, creando soluciones web desde 2015. Apasionado por React, Node.js y la tecnología open source ��",
     url: "https://binarybrains-club.github.io/linkytree",
-    image: "https://example.com/avatar-john-doe.png",
+    image: BinaryLogo.src,
     siteName: "Binary Brains",
     locale: "es_MX",
     /*twitterSite: '@johndoe',
