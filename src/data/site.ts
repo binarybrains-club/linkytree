@@ -31,11 +31,10 @@ export const site = {
   },
 
   featuredLink: {
-    href:
-      "https://untalbry.notion.site/Contribuidores-47bd85709a4048f0aa4b964d820a89a1",
-    title: "¿Necesitas ayuda programando?",
+    href: "https://talent-land.mx/comunidades",
+    title: "¡Estaremos en el Talent-Land México!",
     subtitle:
-      "Descubre a los colaboradores de la comunidad y sus áreas de especialidad",
+      "¿No nos crees?, ¡Visita la sección de comunidades y encuentranos!🧠💙",
   },
 
   profile: {
