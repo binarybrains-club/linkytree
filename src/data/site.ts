@@ -31,8 +31,7 @@ export const site = {
   },
 
   featuredLink: {
-    href:
-      "https://talent-land.mx/comunidades",
+    href: "https://talent-land.mx/comunidades",
     title: "¡Estaremos en el Talent-Land México!",
     subtitle:
       "¿No nos crees?, ¡Visita la sección de comunidades y encuentranos!🧠💙",
