@@ -21,7 +21,7 @@ export const site = {
     ogTitle: "Binary Brains",
     twitterTitle: "Binary Brains",
     description:
-      "Full Stack Developer, creando soluciones web desde 2015. Apasionado por React, Node.js y la tecnología open source ��",
+      "Binary Brains: comunidad estudiantil de informática. Proyectos, eventos y aprendizaje colaborativo. Todos los niveles son bienvenidos. Juntos llegamos más lejos. 🚀",
     url: "https://binarybrains-club.github.io/linkytree",
     image: BinaryLogo.src,
     siteName: "Binary Brains",
