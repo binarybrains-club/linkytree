@@ -75,16 +75,14 @@ const jsonLd = {
         <SocialLinks links={site.socialLinks} />
 
         <div class="space-y-3 pt-4">
-          {
-            site.linkCards.map((card) => (
-              <LinkCard
-                href={card.href}
-                title={card.title}
-                subtitle={card.subtitle}
-                trailingIcon={card.trailingIcon}
-              />
-            ))
-          }
+          {site.linkCards.map((card) => (
+            <LinkCard
+              href={card.href}
+              title={card.title}
+              subtitle={card.subtitle}
+              trailingIcon={card.trailingIcon}
+            />
+          ))}
         </div>
 
         <Footer />

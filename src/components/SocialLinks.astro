@@ -31,16 +31,14 @@ const icons: Record<string, string> = {
 ---
 
 <div class="flex justify-center gap-4 flex-wrap">
-  {
-    links.map((link) => (
-      <a
-        href={link.href}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label={link.ariaLabel}
-        class="social-icon"
-        set:html={icons[link.icon]}
-      />
-    ))
-  }
+  {links.map((link) => (
+    <a
+      href={link.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={link.ariaLabel}
+      class="social-icon"
+      set:html={icons[link.icon]}
+    />
+  ))}
 </div>
